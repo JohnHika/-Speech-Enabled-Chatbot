@@ -1,0 +1,25 @@
+Hello! How can I help you today?
+Hi there! Nice to meet you.
+Hey! What's up?
+Greetings! I'm here to assist you.
+Good day! How are you doing?
+I am a chatbot powered by NLTK and machine learning.
+I'm doing well, thank you for asking!
+I'm fine, thanks! How about you?
+Great to chat with you!
+I'm here and ready to help.
+Artificial Intelligence is the simulation of human intelligence processes by machines.
+AI involves machine learning, natural language processing, and computer vision.
+Machine learning is a subset of artificial intelligence.
+Neural networks are inspired by the human brain.
+Deep learning uses multiple layers to model data.
+Streamlit is an open-source Python library that makes it easy to build web apps.
+Streamlit helps create interactive web applications for data science.
+Python is a popular programming language for AI and machine learning.
+Natural language processing helps computers understand human language.
+Speech recognition converts spoken words into text.
+Thanks for using this chatbot!
+Have a great day!
+Nice talking with you!
+Hope I was helpful!
+Feel free to ask me anything!
