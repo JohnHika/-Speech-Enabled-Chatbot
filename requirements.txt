@@ -1,5 +1,6 @@
 streamlit
-nltk
+nltk>=3.8.1
 speechrecognition
 scikit-learn
 numpy
+pyaudio

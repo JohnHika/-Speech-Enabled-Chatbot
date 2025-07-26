@@ -8,15 +8,31 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 # Download required NLTK resources
-nltk.download('punkt')
-nltk.download('wordnet')
+try:
+    nltk.download('punkt', quiet=True)
+    nltk.download('punkt_tab', quiet=True)
+    nltk.download('wordnet', quiet=True)
+    nltk.download('omw-1.4', quiet=True)
+except Exception as e:
+    st.error(f"Error downloading NLTK data: {e}")
 
 # Load knowledge base
-with open('chatbot.txt', 'r', errors='ignore') as f:
-    raw = f.read().lower()
+try:
+    with open('chatbot.txt', 'r', errors='ignore') as f:
+        raw = f.read().lower()
+except FileNotFoundError:
+    st.error("chatbot.txt file not found. Please ensure the file exists.")
+    st.stop()
+except Exception as e:
+    st.error(f"Error reading chatbot.txt: {e}")
+    st.stop()
 
-sent_tokens = nltk.sent_tokenize(raw)
-lemmer = nltk.stem.WordNetLemmatizer()
+try:
+    sent_tokens = nltk.sent_tokenize(raw)
+    lemmer = nltk.stem.WordNetLemmatizer()
+except Exception as e:
+    st.error(f"Error initializing NLTK components: {e}")
+    st.stop()
 
 def LemTokens(tokens):
     return [lemmer.lemmatize(token) for token in tokens]
