@@ -71,7 +71,20 @@ A modern, interactive chatbot that supports both text and voice input, built wit
 └── README.md          # Project documentation
 ```
 
-## 🔧 Configuration
+## � Deployment
+
+### Streamlit Cloud Deployment
+This app is ready for deployment on Streamlit Cloud:
+
+1. **Fork/Clone** this repository
+2. **Connect** your GitHub account to [Streamlit Cloud](https://streamlit.io/cloud)
+3. **Deploy** by selecting your repository
+4. The app will automatically install dependencies from `requirements.txt` and `packages.txt`
+
+### Local Deployment
+Follow the installation steps above to run locally.
+
+## �🔧 Configuration
 
 - **Knowledge Base**: Edit `chatbot.txt` to customize chatbot responses
 - **Speech Settings**: Modify speech recognition parameters in `app.py`
